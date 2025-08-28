@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap');
 
 :root {
     --font-main: 'Roboto', sans-serif;
@@ -9,12 +9,14 @@
     --color-ocean: #404bbf;
     --color-navy: #2e2f42;
     --color-slate: #434455;
-    --color-grey: #8e8f99;
+    --color-light-slate: #8e8f99;
     --color-cornflower: #e7e9fc;
     --color-cloud: #f4f4fd;
     --color-white: #ffffff;
+    --color-green: #31d0aa;
 }
 
+/* ====== Base ====== */
 body {
     font-family: var(--font-main);
     color: var(--color-slate);
@@ -22,6 +24,7 @@ body {
     margin: 0;
 }
 
+/* ====== Logo ====== */
 .logo-link {
     font-family: var(--font-accent);
     font-weight: 700;
@@ -37,6 +40,11 @@ body {
     color: var(--color-navy);
 }
 
+.logo-accent {
+    color: var(--color-cloud);
+}
+
+/* ====== Navigation ====== */
 .nav-link {
     font-weight: 500;
     font-size: 16px;
@@ -51,6 +59,7 @@ body {
     color: var(--color-ocean);
 }
 
+/* ====== Contacts ====== */
 .contact-address {
     font-style: normal;
 }
@@ -68,6 +77,7 @@ body {
     color: var(--color-ocean);
 }
 
+/* ====== Hero Section ====== */
 .hero-section {
     background-color: var(--color-navy);
 }
@@ -97,24 +107,29 @@ body {
     background-color: var(--color-ocean);
 }
 
+/* ====== Section Titles ====== */
 .section-title {
     font-size: 36px;
     line-height: 1.11;
-    font-weight: 700;
-    letter-spacing: 0.02em;
     text-align: center;
+    letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--color-navy);
     margin-bottom: 72px;
 }
 
+/* ====== Lists ====== */
+.nav-list,
+.contact-list,
 .features-list,
-.portfolio-list {
+.portfolio-list,
+.gallery-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
+/* ====== Features & Portfolio Cards ====== */
 .feature-title,
 .portfolio-title {
     font-size: 20px;
@@ -133,28 +148,22 @@ body {
     color: var(--color-slate);
 }
 
+/* ====== Portfolio Gallery Section ====== */
+.portfolio-section {
+    background-color: var(--color-cloud);
+}
+
 .portfolio-item {
     background-color: var(--color-white);
 }
 
-.footer {
+/* ====== Footer ====== */
+.footer-section {
     background-color: var(--color-navy);
-    color: var(--color-cloud);
 }
 
 .footer-text {
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
-
-.footer-social-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-    background-color: #31d0aa;
+    color: var(--color-cloud);
 }
