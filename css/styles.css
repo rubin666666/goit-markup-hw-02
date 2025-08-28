@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css');
+
+:root {
+    --font-main: 'Roboto', sans-serif;
+    --font-accent: 'Raleway', sans-serif;
+
+    --color-iris: #4d5ae5;
+    --color-ocean: #404bbf;
+    --color-navy: #2e2f42;
+    --color-green: #31d0aa;
+    --color-slate: #434455;
+    --color-light-slate: #8e8f99;
+    --color-cornflower: #e7e9fc;
+    --color-cloud: #f4f4fd;
+    --color-grey: #8e8f99;
+    --color-white: #ffffff;
+    --color-dairy: #fcfcfc;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-slate);
+    background-color: var(--color-white);
+    margin: 0;
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-cornflower);
+    padding: 24px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 76px;
+    /* Відстань між логотипом і списком навігації */
+}
+
+.logo {
+    font-family: var(--font-accent), sans-serif;
+    font-size: 18px;
+    line-height: 1.17;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-iris);
+}
+
+.logo-accent-header {
+    color: var(--color-navy);
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: var(--color-navy);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--color-ocean);
+}
+
+.contacts {
+    display: flex;
+    gap: 40px;
+    font-style: normal;
+    
+}
+
+.contact-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--color-slate);
+    text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--color-ocean);
+}
+
+
+.hero {
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    padding: 188px 0;
+    text-align: center;
+}
+
+.hero-title {
+    max-width: 496px;
+    margin: 0 auto 48px;
+    font-size: 56px;
+    line-height: 1.07;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.button-primary {
+    background-color: var(--color-iris);
+    color: var(--color-white);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    min-width: 169px;
+    height: 56px;
+}
+
+.button-primary:hover,
+.button-primary:focus {
+    background-color: var(--color-ocean);
+}
+
+
+.section {
+    padding: 120px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.features-list,
+.team-list,
+.portfolio-list,
+.footer-social-list {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.feature-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.feature-title {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.feature-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.team-section {
+    background-color: var(--color-cloud);
+    /* #F4F4FD */
+}
+
+.team-card {
+    background-color: var(--color-white);
+    /* Білий фон картки */
+    border-radius: 0 0 4px 4px;
+    text-align: center;
+    padding: 32px 0;
+}
+
+.team-name {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.team-role {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-grey);
+    letter-spacing: 0.02em;
+}
+
+/* Our Portfolio */
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    justify-content: center;
+}
+
+.portfolio-card {
+    width: calc((100% - 48px) / 3);
+    /* 3 картки в ряд */
+    background-color: var(--color-white);
+    border: 1px solid var(--color-cornflower);
+    box-sizing: border-box;
+}
+
+.portfolio-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-content {
+    padding: 32px 16px;
+}
+
+.portfolio-title {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.portfolio-type {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-grey);
+    letter-spacing: 0.02em;
+}
+
+.footer {
+    background-color: var(--color-navy);
+    color: var(--color-cloud);
+    padding: 100px 0;
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    max-width: 264px;
+}
+.footer-social-list {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    /* ← це прибирає точки */
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--color-green);
+}
+ul {
+    list-style: none;
+}
+.logo {
+    font-family: var(--font-accent), sans-serif;
+    font-size: 18px;
+    line-height: 1.17;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-iris);
+    /* синій для "Web" */
+}
+
+.logo-accent-footer {
+    color: var(--color-cloud);
+    /* білий для "Studio" у футері */
+}
