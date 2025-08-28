@@ -148,13 +148,27 @@ body {
     color: var(--color-slate);
 }
 
-/* ====== Portfolio Gallery Section ====== */
+/* ====== Portfolio Section ====== */
 .portfolio-section {
     background-color: var(--color-cloud);
 }
 
 .portfolio-item {
     background-color: var(--color-white);
+}
+
+/* ====== Gallery Section ====== */
+.gallery-section {
+    background-color: var(--color-cloud);
+}
+
+.gallery-item {
+    background-color: var(--color-white);
+}
+
+.gallery-item img {
+    width: 360px;
+    height: auto;
 }
 
 /* ====== Footer ====== */
